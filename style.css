@@ -1,14 +1,20 @@
 body{
     background-color:#3D087B ;
+    margin: 0px;
+    box-sizing: border-box;
+    width: 100%;
     /* font-family: 'Shantell Sans', cursive;
 
     font-family: 'Tilt Warp', cursive; */
 }
 .main{
     display: flex;
-    /* margin-left: 124px;
-    margin-top: 34px; */
-    margin: 34px 123px auto 123px;
+    width: 100%;
+    /* border: 5px solid black; */
+    justify-content:center;
+    align-items: center;
+    box-sizing: border-box;
+   flex-wrap: wrap;
 }
 .container1{
     display: flex;
@@ -37,10 +43,11 @@ body{
 .setTime{
     background-color: white;
     width: 100%;
-    height: 363px;
+    height: auto;
     padding: 24px;
     border-radius: 10px;
     margin: 38px 0px 16px 0px;
+    box-sizing: content-box;
 }
 .item{
     display: flex;
@@ -94,15 +101,18 @@ button{
 }
 .container2{
     display: flex;
+    width: 566px;
     flex-wrap: wrap;
     position: relative;
+    box-sizing: border-box;
+    /* border: 2px solid black; */
     /* flex-direction: column; */
     /* justify-content: space-around; */
 
     
 }
 .time{
-    width: 536px;
+    width: 100%;
     height: 130px;
     background-color: white;
     display: flex;
@@ -111,6 +121,7 @@ button{
     align-items: center;
     font-size: 30px;
     border-radius: 10px;
+    margin-bottom: 45px;
 
 
 }
@@ -133,32 +144,37 @@ button{
 }
 .timecontainer{
     position: relative;
+    width: 100%;
 }
 .timebg1{
-    width: 416px;
+    width: 75%;
     height: 130px;
     position: absolute;
     background: #FFFFFF;
     border-radius: 10px;
     opacity:0.71;
-    left: 55px;
-    top: 20px;
+    left:11%;
+    top: 10%;
     z-index: -1;
 }
 .timebg2{
-    width: 379px;
+    width: 65%;
     height: 130px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 10px;
     opacity: 0.22;
     z-index: -2;
     position:absolute;
-    left: 72px;
-    top: 35px;
+    left: 16%;
+    top: 18%;
+}
+.subcontainer{
+    width: 100%;
+    box-sizing: border-box;
 }
 .breakfast{
     box-sizing: border-box;
-    width: 536px;
+    width: 100%;
     height: 118px;
     background-color:white;
     border-radius: 10px;
@@ -170,53 +186,44 @@ button{
     padding: 20px;
     display: flex;
     align-items: center;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     
 }
 .img{
-    margin-top: -20px;
+   
+    margin-top: 20px;
     /* position: absolute;
     top: 10px;
      */
 }
-@media (max-width:1000px) {
-    .main{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .container2{
-        justify-content: center;
-        align-items: center;
-    }
-    .time{
-        margin-bottom: 40px;
-    }
-    .logo{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        /* background-color: aquamarine; */
-    }
-    .container1{
-        width: 100%;
-    }
-    .container2{
-        width: 100%;
-        /* margin: 0px; */
-    }
-    .breakfast{
-        margin-bottom: 45px;
-    }
-    @media (max-width:750px) {
-        .main{
-            width: 100%;
-            margin: 0px;
-            padding: 0px;
-        }
-        
-    }
+img{
+    width: 100%;
+}
+@media (max-width:1192px) {
+    .subcontainer{
+        margin-top: 40px;
+      }
     
-       
+}
+@media (max-width:550px) {
+    .main{
+    
+    }
+  .container1{
+    width: 90%;
+   
+  }
+  .item select{
+    margin-left: 0px;
+    width: 40%;
+    padding: 10px;
+  }
+  .container2{
+    width: 95%;
+  }
+  .subcontainer{
+    margin-top: 40px;
+  }
+
+    
 }
